@@ -1,9 +1,11 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: todoapp-deployment
+  name: todoapp
+  labels:
+    app: todoapp
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: todoapp
@@ -14,8 +16,6 @@ spec:
     spec:
       containers:
       - name: todoapp
-        image: todoappm:latest
+        image: narutonaresh/todoapp-slim
         ports:
         - containerPort: 8000
-
-
