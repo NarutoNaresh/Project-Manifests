@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: todoapp
-        image: narutonaresh/todoappmain:2
+        image: narutonaresh/todoappmain:3
         ports:
         - containerPort: 8000
