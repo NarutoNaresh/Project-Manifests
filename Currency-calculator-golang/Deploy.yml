@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: curcalc
-        image: narutonaresh/curcalcmain:240901135546
+        image: narutonaresh/curcalcmain:240901140221
         ports:
         - containerPort: 5050
