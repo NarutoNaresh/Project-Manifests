@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: curcalc
+  labels:
+    app: curcalc
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: curcalc
+  template:
+    metadata:
+      labels:
+        app: curcalc
+    spec:
+      containers:
+      - name: curcalc
+        image: narutonaresh/curcalcmain:TagName
+        ports:
+        - containerPort: 5050
